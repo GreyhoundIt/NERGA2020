@@ -39,8 +39,8 @@
   .navbar-nav {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(8, 1fr) 2fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(9, 1fr) 2fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     align-content: center;
 
@@ -78,6 +78,10 @@
     }
     .nav-item-top:nth-of-type(8) {
       -ms-grid-column: 9;
+      -ms-grid-row: 1;
+    }
+    .nav-item-top:nth-of-type(9) {
+      -ms-grid-column: 10;
       -ms-grid-row: 1;
     }
 
