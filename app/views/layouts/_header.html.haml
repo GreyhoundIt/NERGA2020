@@ -26,6 +26,11 @@
           = link_to "Links", links_path
         %li.nav-item.nav-item-top
           = link_to "Guidance", guidance_path
+        %li.nav-item.nav-item-top
+          %a.nav-link.dropdown-trigger{href: "#"} Policies
+          %ul.nav-dropdown
+            %li.nav-dropdown-item= link_to "Adult Safeguarding Policy" ,  asset_path("/Adults-Safeguarding-Policy-Procedures-Club-NERGA.pdf"), target: :_blank
+            %li.nav-dropdown-item= link_to "Children Safeguarding Policy" ,  asset_path("/Children-Young-People-Safeguarding-Policy-NERGA.pdf"), target: :_blank
         - if user_signed_in?
           %li.nav-item.nav-item-top
             = link_to( destroy_user_session_path, method: :delete) do
