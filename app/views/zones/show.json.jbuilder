@@ -1,1 +1,1 @@
-json.partial! "zones/zone", zone: @zone
+#json.partial! "zones/zone", zone: @zone

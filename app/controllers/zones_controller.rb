@@ -2,7 +2,6 @@ class ZonesController < ApplicationController
   before_action :set_zone, only: [:show]
 
   # GET /zones/1
-  # GET /zones/1.json
   def show
     @next_fixtures = Fixture.fornight.where(zone_id: @zone.id)
     #@next_fixtures = Fixture.where(zone_id: @zone.id).order(start_time: :asc).take(2)
