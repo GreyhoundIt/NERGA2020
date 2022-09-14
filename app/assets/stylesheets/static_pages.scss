@@ -5,6 +5,9 @@
 body {
   background-color: $bg_colour;
   font-family: 'Open Sans', sans-serif;
+  strong {
+    font-weight: 600;
+  }
 }
 
 p, li {
