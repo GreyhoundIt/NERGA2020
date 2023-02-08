@@ -4,6 +4,7 @@ class Fixture < ApplicationRecord
   belongs_to :zone
   has_many :team_sheets
   scope :fornight, -> { where 'start_time BETWEEN ? AND ?', Date.today, Date.today + 14.days }
+  self.primary_key = :id
 
   def self.import(file)
     CSV.foreach(file.path, headers: true) do |row|
