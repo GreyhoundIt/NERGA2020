@@ -1,6 +1,6 @@
 %h1.title= @zone.name
 %h2.representative= "Zone Rep: #{@zone.rep} - #{@zone.rep_club}"
-- if fixture.team_overall_url.present?
+- if @zone.team_overall_url.present?
 	= link_to "Team Overall", @zone.team_overall_url, :class => "pure-button fuller-button blue zone-overall", target: "_blank"
-- if fixture.person_overall_url.present?
+- if @zone.person_overall_url.present?
 	= link_to "Players Overall", @zone.person_overall_url, :class => "pure-button fuller-button blue zone-overall", target: "_blank"
