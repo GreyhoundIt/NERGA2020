@@ -3,7 +3,7 @@
   %h3.start-time= "Start time - #{fixture.start_time.strftime("%a %d %b ")} - #{fixture.start_time.strftime("%H:%M%p")}"
   - if fixture.bye_teams.present?
     %p= "None-playing Teams - #{fixture.bye_teams}"
-  - if fixture.start_sheet_skeleton.present? && fixture.start_sheet_official.empty?
+  - if fixture.start_sheet_skeleton.present? && !fixture.start_sheet_official.present?
     = link_to "Start Sheet Skeleton", fixture.start_sheet_skeleton, :class => "pure-button fuller-button blue fixture-button", target: "_blank"
   - if fixture.start_sheet_official.present?
     = link_to "Start Sheet", fixture.start_sheet_official, :class => "pure-button fuller-button blue fixture-button", target: "_blank"
